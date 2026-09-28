@@ -3,50 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PeakPath | Mountain Climbing</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>SummitForge Expeditions | Mountain Climbing Adventures</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <div class="container">
-      <a href="index.html" class="logo">PeakPath</a>
+      <a href="#" class="logo">Summit<span>Forge</span></a>
+      <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
       <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="climbs.html">Climbs</a>
-        <a href="tips.html">Tips</a>
+        <a href="#expeditions">Expeditions</a>
+        <a href="#about">About</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <h1>Reach New Heights</h1>
-      <p>Discover the best mountain climbing routes, gear advice, and outdoor adventure tips.</p>
-      <a href="climbs.html" class="btn">Explore Climbs</a>
+      <h1>Climb Higher.<br>Live Deeper.</h1>
+      <p>Guided mountain expeditions for every level — from first summits to technical alpine routes around the world.</p>
+      <a href="#expeditions" class="btn">View Expeditions</a>
+      <a href="#contact" class="btn btn-outline">Plan Your Trip</a>
     </div>
   </section>
 
-  <main class="container">
-    <section class="features">
-      <div class="card">
-        <h2>Epic Routes</h2>
-        <p>From beginner trails to challenging peaks — find your next climb.</p>
+  <!-- Why Us -->
+  <section id="why-us">
+    <div class="container">
+      <h2 class="section-title">Why Climb With Us</h2>
+      <p class="section-subtitle">Professional guides, small groups, and a focus on safety and unforgettable experiences.</p>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">🧭</div>
+          <h3>Expert Guides</h3>
+          <p>IFMGA-certified mountain guides with years of high-altitude experience.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Safety First</h3>
+          <p>Thorough risk management, quality gear, and conservative decision-making.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3>Small Groups</h3>
+          <p>Maximum 6 clients per guide so you get personal attention and better conditions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Global Peaks</h3>
+          <p>Expeditions across the Alps, Andes, Himalayas, and New Zealand.</p>
+        </div>
       </div>
-      <div class="card">
-        <h2>Safety First</h2>
-        <p>Learn essential tips to stay safe and prepared on every adventure.</p>
-      </div>
-      <div class="card">
-        <h2>Community</h2>
-        <p>Join fellow climbers who share a passion for the mountains.</p>
-      </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- Expeditions -->
+  <section class="expeditions" id="expeditions">
+    <div class="container">
+      <h2 class="section-title">Featured Expeditions</h2>
+      <p class="section-subtitle">Hand-picked routes for different skill levels and seasons.</p>
+      <div class="expedition-grid">
+        <article class="expedition-card">
+          <div class="expedition-img">Alps</div>
+          <div class="expedition-body">
+            <h3>Mont Blanc</h3>
+            <p class="meta">France/Italy · Intermediate · 4,810 m</p>
+            <p>Classic alpine ascent with glacier travel and stunning views. 6-day program.</p>
+          </div>
+        </article>
+        <article class="expedition-card">
+          <div class="expedition-img">Himalayas</div>
+          <div class="expedition-body">
+            <h3>Island Peak</h3>
+            <p class="meta">Nepal · Intermediate · 6,189 m</p>
+            <p>Perfect introduction to high-altitude climbing in the Everest region.</p>
+          </div>
+        </article>
+        <article class="expedition-card">
+          <div class="expedition-img">Andes</div>
+          <div class="expedition-body">
+            <h3>Aconcagua</h3>
+            <p class="meta">Argentina · Advanced · 6,961 m</p>
+            <p>Highest peak in the Americas. Non-technical but demanding altitude expedition.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About SummitForge</h2>
+          <p>Founded by professional mountain guides, SummitForge runs carefully planned climbing expeditions that prioritise safety, skill development, and genuine adventure.</p>
+          <p>Whether you’re taking your first steps on a glacier or aiming for a 6,000 m summit, we match the right objective to your experience and goals.</p>
+          <div class="stats">
+            <div class="stat">
+              <h4>18+</h4>
+              <p>Years guiding</p>
+            </div>
+            <div class="stat">
+              <h4>1,200+</h4>
+              <p>Clients summit</p>
+            </div>
+            <div class="stat">
+              <h4>0</h4>
+              <p>Major incidents</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="testimonial">
+            “The team’s attention to detail and calm decision-making on the mountain made all the difference. Best expedition of my life.”
+            <br><br>
+            <strong>— Sarah K., Mont Blanc 2025</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <h2>Ready for Your Next Summit?</h2>
+      <p>Tell us your experience level and the peaks that inspire you. We’ll help you plan the right expedition.</p>
+      <a href="mailto:hello@summitforge.com" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2026 PeakPath. Built for mountain lovers.</p>
+      <div class="footer-grid">
+        <div>
+          <h4>SummitForge</h4>
+          <p>Guided mountain expeditions worldwide.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#expeditions">Expeditions</a>
+          <a href="#about">About</a>
+          <a href="#why-us">Why Us</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:hello@summitforge.com">hello@summitforge.com</a>
+          <a href="#">+1 (555) 123-4567</a>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 SummitForge Expeditions. All rights reserved.
+      </div>
     </div>
   </footer>
+
 </body>
 </html>
