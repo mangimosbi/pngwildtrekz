@@ -1,0 +1,197 @@
+/* PeakPath – simple mountain climbing site */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #f5f7fa;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Header */
+header {
+  background: #1e3a2f;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+nav a {
+  color: #c8e0d5;
+  text-decoration: none;
+  margin-left: 1.25rem;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #1e3a2f 0%, #2d5a47 50%, #3d7a5f 100%);
+  color: #fff;
+  padding: 4.5rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  max-width: 480px;
+  margin: 0 auto 1.75rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #e8f5e9;
+  color: #1e3a2f;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #fff;
+}
+
+/* Features / cards */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 0;
+}
+
+.card {
+  background: #fff;
+  padding: 1.75rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-top: 3px solid #2d5a47;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #1e3a2f;
+}
+
+/* Page content */
+.page {
+  padding: 2.5rem 0 3.5rem;
+}
+
+.page h1 {
+  font-size: 2rem;
+  color: #1e3a2f;
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Climbs */
+.climb-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.climb-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.climb-card h2 {
+  color: #1e3a2f;
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #2d5a47;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Tips */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.tip {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.tip h2 {
+  font-size: 1.15rem;
+  color: #1e3a2f;
+  margin-bottom: 0.4rem;
+}
+
+/* Footer */
+footer {
+  background: #1e3a2f;
+  color: #c8e0d5;
+  text-align: center;
+  padding: 1.25rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  nav a {
+    margin-left: 0.75rem;
+    font-size: 0.95rem;
+  }
+}
